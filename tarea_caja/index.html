@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:#c8e3b8;
+    }
+
+    .caja{
+        position:relative;
+        width:700px;
+        height:400px;
+        background:#c8e3b8;
+    }
+    .linea-izquierda{
+        position:absolute;
+        left:0;
+        top:0;
+        width:12px;
+        height:100%;
+        background:#1e4c79;
+    }
+    .linea-abajo{
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        height:4px;
+        background:#7ccbc8;
+    }
+
+    .linea-arriba-1,
+    .linea-arriba-2{
+        position:absolute;
+        left:0;
+        width:100%;
+        height:6px;
+        background:#b79816;
+    }
+
+    .linea-arriba-2{
+        top:16px;
+    }
+
+.linea-derecha{
+    position:absolute;
+    right:0;
+    top:35px;
+    width:12px;
+    height:365px;
+
+    background:repeating-linear-gradient(
+        to bottom,
+        #712d9d 0px,
+        #712d9d 45px,
+        #c8e3b8 45px,
+        #c8e3b8 90px
+    );
+}
+</style>
+</head>
+
+<body>
+
+    <div class="caja">
+        <div class="linea-izquierda"></div>
+        <div class="linea-abajo"></div>
+        <div class="linea-arriba-1"></div>
+        <div class="linea-arriba-2"></div>
+        <div class="linea-derecha"></div>
+    </div>
+
+</body>
+</html>
